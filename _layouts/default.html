@@ -1,0 +1,64 @@
+---
+name: cukerecip.es
+tagline: the offical blog of the Cucumber Recipes book
+twitter: cukerecipes
+github: cucumber
+email: undees@gmail.com
+website: pragprog.com/titles/dhwcr
+---
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      {% if page.title %}
+        {{ page.title }} &ndash;
+      {% endif %}
+      {{ page.name }}
+    </title>
+    <link href="/css/application.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,900' rel='stylesheet' type='text/css' />
+  </head>
+
+  <body class="posts {% if page.show %}show{% endif %}">
+    <header id="sidebar">
+      <h1><a href="/">{{ page.name }}</a></h1>
+      {% if page.tagline %}
+        <span class="tagline">{{ page.tagline }}</span>
+      {% endif %}
+      <br />
+      <br />
+      <a id="book" href="http://pragprog.com/titles/dhwcr"><img src="book.png" /></a>
+      <ul>
+        {% if page.website %}
+          <li><a href="http://{{ page.website }}">{{ page.website }}</a>
+        {% endif %}
+        {% if page.twitter %}
+          <li><a href="http://twitter.com/{{ page.twitter }}">@{{ page.twitter }}</a>
+        {% endif %}
+        {% if page.github %}
+          <li><a href="http://github.com/{{ page.github }}">github</a>
+        {% endif %}
+        {% if page.email %}
+          <li><a href="mailto:{{ page.email }}?subject:Cucumber Recipes">email</a></li>
+        {% endif %}
+        <li><a href="/posts.rss">rss feed</a></li>
+      </ul>
+      <!-- span class="powered-by">Powered by <a href="https://github.com/drewinglis/obtvse-jekyll">Obtvse for Jekyll</a></span -->
+    </header>
+
+    <section id="container">
+      <header>
+        {% if page.date %}
+          <time>Posted {{ page.date | date: "%B %d %Y" }}</time>
+        {% endif %}
+        {% if page.header %}
+          {{ page.header }}
+        {% endif %}
+      </header>
+      <div id="content">
+        {{ content }}
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<section>
+  <div class="post contain">
+    <h1>
+      {% if post.url %}
+        <a href="{{ post.url }}">
+          {{ post.title }}
+        </a>
+      {% endif %}
+      {% if page.title %}
+        {{ page.title }}
+      {% endif %}
+    </h1>
+    {{ if content }}
+      {{ content }}
+    {{ endif }}
+    {{ if post.content }}
+      {{ post.content }}
+    {{ endif }}
+  </div>
+  {% if content %}
+    <a class="button space-top" href="/index.html">Back to Blog</a>
+  {% endif %}
+</section>

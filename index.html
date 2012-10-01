@@ -1,41 +1,12 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Cukerecip.es by cucumber</title>
+---
+layout: default
+header: Today
+---
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Cukerecip.es</h1>
-        <p>The official blog of the Cucumber Recipes book</p>
+{% for post in site.posts | limit 10 %}
+  {% include post.html %}
+{% endfor %}
 
-        <p class="view"><a href="https://github.com/cucumber/cukerecip.es">View the Project on GitHub <small>cucumber/cukerecip.es</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/cucumber/cukerecip.es/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/cucumber/cukerecip.es/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/cucumber/cukerecip.es">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <p>You can test just about anything with Cucumber. We certainly have, and in Cucumber Recipes we’ll show you how to apply our hard-won field experience to your own projects. Once you’ve mastered the basics, this book will show you how to get the most out of Cucumber—from specific situations to advanced test-writing advice. With over forty practical recipes, you’ll test desktop, web, mobile, and server applications across a variety of platforms. This book gives you tools that you can use today to automate any system that you encounter, and do it well.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/cucumber">cucumber</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
-</html>
+<div class="archive_link">
+  <a href="/archive.html">All Posts</a>
+</div>
