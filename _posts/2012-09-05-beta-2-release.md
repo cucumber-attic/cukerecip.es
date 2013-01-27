@@ -1,8 +1,9 @@
-# -*- coding: utf-8 -*-
 ---
 title: Beta 2 Release
 layout: post
 ---
+{% include JB/setup %}
+<!-- -*- coding: utf-8 -*- -->
 
 This new release includes two new recipes:
 

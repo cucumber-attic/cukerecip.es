@@ -2,6 +2,9 @@
 title: Any Requests?
 layout: post
 ---
+{% include JB/setup %}
+<!-- -*- coding: utf-8 -*- -->
+
 Hi, everyone.
 
 Are there any Cucumber techniques you'd like to see covered in the book? These could be tricks you've discovered, tasks you've always wondered how to perform, or follow-ons for specific recipes.

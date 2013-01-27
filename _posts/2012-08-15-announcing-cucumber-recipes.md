@@ -1,8 +1,9 @@
-# -*- coding: utf-8 -*-
 ---
 title: Announcing Cucumber Recipes
 layout: post
 ---
+{% include JB/setup %}
+<!-- -*- coding: utf-8 -*- -->
 
 You can test just about anything with Cucumber---we certainly have! See how to test desktop, web, mobile, and server applications across a variety of platforms. We'll arm you with ready-rolled solutions to real-world problems: your tests will run faster, read more clearly, and work in any environment.
 
