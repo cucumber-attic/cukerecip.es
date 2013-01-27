@@ -642,6 +642,7 @@ header li a:hover {
 #container {
   margin-left: 240px;
   position: relative;
+  background: white;
 }
 
 /* line 83, ../../app/assets/stylesheets/posts.css.scss */
