@@ -98,7 +98,7 @@ You can create an account on Codeship with your existing GithHub or
 Bitbucket credentials, or with an e-mail address and password.  Once
 you've done so, they'll lead you to the new project page:
 
-![New project](assets/codeship-new.png)
+![New project](/assets/codeship-new.png)
 
 Codeship needs to know where to get the source code for your app.
 Head over to GitHub or Bitbucket and create a blank repository.  Then,
@@ -125,7 +125,7 @@ Further down the page, in the Test Commands, window, type:
 Now, when you save your project, Codeship will prompt you to complete
 the setup by adding a hook to your project:
 
-![Hook](assets/codeship-hook.png)
+![Hook](/assets/codeship-hook.png)
 
 Follow the on-screen instructions to configure Github or Bitbucket to
 use the Codeship hook.
@@ -141,7 +141,7 @@ the server, so that Codeship can see it:
 As soon as you push the project, Codeship will grab the latest version
 and run your Cucumber features:
 
-![New build](assets/codeship-build.png)
+![New build](/assets/codeship-build.png)
 
 Congratulations!  You've created your first passing Codeship
 integration.
