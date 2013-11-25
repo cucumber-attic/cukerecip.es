@@ -54,7 +54,7 @@ with the following contents:
         Then I am 17 minutes late
 
 Eventually, we'll test this app through its web interface.  But just
-for the purposes of getting started with CodeShip, let's start with
+for the purposes of getting started with Codeship, let's start with
 simple math on the departure times.
 
 ## The Step Definitions
@@ -94,7 +94,7 @@ Once that's working, it's time to create your project on Codeship.
 
 ## Getting Started with Codeship
 
-You can create an account on Codeship with your existing GithHub or
+You can create an account on Codeship with your existing GitHub or
 Bitbucket credentials, or with an e-mail address and password.  Once
 you've done so, they'll lead you to the new project page:
 
